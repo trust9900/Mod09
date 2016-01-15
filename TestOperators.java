@@ -22,10 +22,14 @@ public class TestOperators {
          System.out.println(c);//2
          short aa=1,bb=1,cc;
           cc=(short)(aa+bb);
-          long dd=10000*365L*60*60;
+          long dd=10000*365L*24*60*60;
           System.out.println("dd="+dd);
-           long ee=10000*365*60*60;
+           long ee=10000*365*24*60*60;
           System.out.println("ee="+ee);
+          double avg =1.0/2;
+          double avg2 =1d/2;
+          System.out.println("avg="+avg);
+          System.out.println("avg2="+avg);
                 
     }
 }
