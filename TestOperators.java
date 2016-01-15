@@ -56,8 +56,11 @@ public class TestOperators {
           int data1 ='a';//a=97
           data1++;//data=(int)(data+1)
           System.out.println("data1="+data1);//a=98
-          
-          String id = "A1234567890";
+  //---------------------------------------------------------------
+  //                    身分證字號檢查
+          String id = "A123456789";
+          char c0 = id.charAt(0);
+          System.out.println("c0 = " + c0);
           
           
     }
