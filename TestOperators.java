@@ -30,6 +30,35 @@ public class TestOperators {
           double avg2 =1d/2;
           System.out.println("avg="+avg);
           System.out.println("avg2="+avg);
-                
+          double answer = 1%2d;
+          System.out.println("answer = " + answer);
+          byte k =1;
+          k++;//k=(byte)(k+1)
+          System.out.println("k = " + k);//print:1 k:2
+          ++k;//k=(byte)(k+1)
+          System.out.println("k="+k);//k:3 print 3
+          
+          byte p=1;
+          System.out.println("p = " + p++ );//先做字串再加
+          System.out.println("p = " + ++p); //2+1=3
+          
+          k=127;
+          System.out.println("k=" + ++k);//k:,print:-128
+          System.out.println("k="+ --k);
+          
+          System.out.println('A'<'a');//true
+          System.out.println(k==127);//true
+          System.out.println(true==true);//true         
+          char data ='a';
+          data++;//data=(char)(data+1)
+          System.out.println("data = " + data);
+          
+          int data1 ='a';//a=97
+          data1++;//data=(int)(data+1)
+          System.out.println("data1="+data1);//a=98
+          
+          String id = "A1234567890";
+          
+          
     }
 }
