@@ -13,7 +13,7 @@ import java.util.Calendar;
  */
 public class TestIf {
     public static void main(String[] args) {
-        int weekday=Calendar.getInstance().get(Calendar.DAY_OF_WEEK);
+        int weekday=Calendar.getInstance().get(Calendar.DAY_OF_WEEK);//找出今天日期
         if (weekday ==Calendar.MONDAY  || weekday==Calendar.TUESDAY ||weekday ==Calendar.THURSDAY){
             System.out.println("整天");
         }
