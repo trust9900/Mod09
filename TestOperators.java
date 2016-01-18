@@ -62,6 +62,14 @@ public class TestOperators {
           char c0 = id.charAt(0);
           System.out.println("c0 = " + c0);
           
+          System.out.println(true & true); //true
+          System.out.println(true && true); //true
+          System.out.println(true & false); //false
+          System.out.println(true && false); //false
+          System.out.println(true | true); //true
+          System.out.println(true || true); //true
+          System.out.println(true | false); //true
+          
           
     }
 }
