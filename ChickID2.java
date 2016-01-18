@@ -13,7 +13,7 @@ public class ChickID2 {
         String id ="B120863158";//維基百科身分證字號範例:B120863158         
         id =id.toUpperCase();//字串轉成大寫
         char firstchar =id.charAt(0); //宣告 char字元變數 firstchar=id.charAt(0) 
-        //charAt(0)為取String id的第一個字元
+        //charAt(0)為取String id的第一個字元,charAt(0)為B,unicode碼為66
         int firstNumber=0;//宣告int變數為firstNumber
         if (firstchar >='A'&&firstchar<='H'){
         firstNumber=firstchar-'A'+10;
