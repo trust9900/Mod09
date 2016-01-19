@@ -36,20 +36,25 @@ public class ChickID2 {
             break;
             case 'Z':
             firstNumber =33;
+            break;
             default:
              System.out.println("通通打錯");
             
         }
         int sum =(firstNumber/10) +(firstNumber%10)*9;//套入身分證字號驗證規則求出的值為11/10=1為十位數，
         //11%10餘數為1為個位數
-             sum=sum+(id.charAt(1)-'0')*8;//49-48=1*8             
-             sum=sum+(id.charAt(2)-'0')*7;//50-48=2*7
-             sum=sum+(id.charAt(3)-'0')*6;//48-48=0*6
-             sum=sum+(id.charAt(4)-'0')*5;//56-48=8*5
-             sum=sum+(id.charAt(5)-'0')*4;//54-48=6*4
-             sum=sum+(id.charAt(6)-'0')*3;//51-48=3*3
-             sum=sum+(id.charAt(7)-'0')*2;//49-48=1*2
-             sum=sum+(id.charAt(8)-'0')*1;//53-48=5*1
+        int i;
+        for(i=1;i<=8;i++){
+            sum=sum+((id.charAt(i)-'0')*(9-i));
+        }
+//             sum=sum+(id.charAt(1)-'0')*8;//49-48=1*8             
+//             sum=sum+(id.charAt(2)-'0')*7;//50-48=2*7
+//             sum=sum+(id.charAt(3)-'0')*6;//48-48=0*6
+//             sum=sum+(id.charAt(4)-'0')*5;//56-48=8*5
+//             sum=sum+(id.charAt(5)-'0')*4;//54-48=6*4
+//             sum=sum+(id.charAt(6)-'0')*3;//51-48=3*3
+//             sum=sum+(id.charAt(7)-'0')*2;//49-48=1*2
+//             sum=sum+(id.charAt(8)-'0')*1;//53-48=5*1
              sum=sum+(id.charAt(9)-'0')*1;//56-48=8*1           
              System.out.println("sum="+sum);//總值為1+9+8+14+0+40+24+9+2+5+8=120
              System.out.println(sum%10==0);//驗證身分是否正確120/10餘數為0 →true
